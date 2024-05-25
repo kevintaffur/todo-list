@@ -1,31 +1,27 @@
 export default class Project {
-  #title;
-  #description;
-  #todos;
-
   constructor(title, description) {
-    this.#title = title;
-    this.#description = description;
-    this.#todos = [];
+    this.title = title;
+    this.description = description;
+    this.todos = [];
   }
 
-  get title() {
-    return this.#title;
+  getTitle() {
+    return this.title;
   }
 
-  set title(newTitle) {
-    this.#title = newTitle
+  setTitle(newTitle) {
+    this.title = newTitle;
   }
 
-  get description() {
-    return this.#description;
+  getDescription() {
+    return this.description;
   }
 
-  set description(newDescription) {
-    this.#description = newDescription;
+  setDescription(newDescription) {
+    this.description = newDescription;
   }
 
   addTodoToProject(newTodo) {
-    this.#todos.push(newTodo);
+    this.todos.push(newTodo);
   }
 }

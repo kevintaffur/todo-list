@@ -7,4 +7,5 @@ console.log(project);
 console.log(todo1);
 
 project.addTodoToProject(todo1);
-console.log(project);
+console.log(JSON.stringify(project));
+console.log(JSON.stringify(todo1));
