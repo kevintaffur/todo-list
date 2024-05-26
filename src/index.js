@@ -1,11 +1,3 @@
-import Project from "./models/Project";
-import Todo from "./models/Todo";
+import ProjectService from "./services/ProjectService";
 
-const project = new Project("test project", "this is a test project");
-const todo1 = new Todo("todo title", "todo description", new Date(), "todopriority");
-console.log(project);
-console.log(todo1);
-
-project.addTodoToProject(todo1);
-console.log(JSON.stringify(project));
-console.log(JSON.stringify(todo1));
+const projectService = new ProjectService();
