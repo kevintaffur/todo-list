@@ -19,7 +19,7 @@ export default class ProjectRepository {
       this.projects.push(defaultProject);
       localStorage.setItem("projects", JSON.stringify(this.projects));
     } else {
-      JSON.parse(memory).forEach(project => this.projects.push(project));
+      JSON.parse(this.memory).forEach(project => this.projects.push(project));
     }
   }
 

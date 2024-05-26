@@ -45,3 +45,96 @@ header #nav-buttons {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+}
+
+#projects {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+
+#projects .project {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  background-color: #003c43;
+  color: #e3fef7;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.project .project-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+#form-container {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+#project-form {
+  display: grid;
+  grid-template-rows: 70px 1fr 50px;
+  gap: 30px;
+  background-color: #615efc;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  height: fit-content;
+}
+
+#project-form .project-title {
+  display: grid;
+  grid-template-rows: 30px 40px;
+}
+
+.project-title label {
+  font-size: 20px;
+}
+
+.project-title input {
+  outline-color: #7e8ef1;
+  border-radius: 10px;
+  border: 0px;
+}
+
+#project-form .project-description {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+}
+
+.project-description label {
+  font-size: 20px;
+}
+
+#project-form .project-description textarea {
+  resize: vertical;
+  min-height: 50px;
+  max-height: 300px;
+  outline-color: #7e8ef1;
+  border-radius: 10px;
+  border: 0px;
+}
+
+#project-form button {
+  justify-self: center;
+  align-self: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: #ffffff;
+  color: #615efc;
+}
