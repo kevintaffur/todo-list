@@ -37,14 +37,14 @@ export default class ProjectFormListener {
       // Add project to dom objects array
       this.homeView.appendProjectToDOM(project);
 
-      // Clean screen (projects)
-      this.homeView.cleanScreen();
-
       // Load listener for all projects
       this.homeListener.loadListeners();
+      
+      // Clean screen (projects)
+      this.homeView.cleanProjects();
 
       // Render all projects
-      this.homeView.render();
+      this.homeView.renderProjects();
     });
   }
 }
